@@ -1,0 +1,451 @@
+* {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body {
+    background-color: #ffffff;
+    margin: 0px;
+  }
+  
+  #header {
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 0px 0px 3px black;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+  }
+  
+  #header > #leftImg > img {
+    margin: 5px 10px;
+    width: 120px;
+  }
+  
+  #header > #rightButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #dIntro h1 {
+    font-size: 33px;
+  }
+  .midPart1 {
+    margin: 0px 80px;
+  }
+  #midPart2 > div {
+    margin: 0px 80px;
+  }
+  
+  #header > #rightButton > div {
+    cursor: pointer;
+    margin: 5px 20px;
+    font-size: 14px;
+    color: rgb(142, 140, 140);
+  }
+  
+  #header > #rightButton > #feature {
+    font-weight: 600;
+    color: rgb(108, 106, 106);
+  }
+  #header > #rightButton > div:nth-child(4) > button {
+    background-color: #c82506;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #header > #rightButton > div:nth-child(4) > button:hover {
+    background-color: rgb(133, 24, 2);
+  }
+  #header > #rightButton > div:nth-child(5):hover {
+    color: #c82506;
+  }
+  #header2 {
+    visibility: hidden;
+  }
+  .dropDown {
+    display: none;
+  }
+  #forSpace {
+    height: 60px;
+  }
+  .midPart1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+  }
+  .midPart1 > div img {
+    max-width: 500px;
+  }
+  .midPart1 > div > div:nth-child(n + 2) {
+    font-size: 19px;
+    color: rgb(48, 48, 48);
+  }
+  .midPart1 > div > div {
+    margin-top: 50px;
+  }
+  .midPart1 > #leftPart1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .midPart1 > .leftPart1 > div:nth-child(1) {
+    color: rgb(48, 48, 48);
+  }
+  .midPart1 > .leftPart1 > div:nth-child(3) > button {
+    background-color: #c82506;
+    color: white;
+    font-size: 20px;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border: none;
+  }
+  
+  .midPart1 > .leftPart1 > div:nth-child(3) > button:hover,
+  #midPart5 button:hover {
+    background-color: rgb(133, 24, 2);
+  }
+  
+  .whiteGrey {
+    background-color: rgb(247, 247, 247);
+    padding: 80px 0px;
+  }
+  .whiteGrey > h1 {
+    text-align: center;
+  
+    color: rgb(48, 48, 48);
+  }
+  #midPart2 > #boxes3 > div {
+    color: white;
+    padding: 30px 20px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #midPart2 > #boxes3 > div:hover {
+    box-shadow: 0px 0px 10px rgb(63, 58, 58);
+    transition: 200ms;
+  }
+  #midPart2 > #boxes3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+  }
+  #midPart2 > #boxes3 > div > div:nth-child(n + 2) {
+    margin-top: 20px;
+  }
+  #midPart2 > #boxes3 > div p {
+    font-size: 16px;
+  }
+  #midPart2 > #boxes3 > #orangeBox {
+    background-color: rgb(217, 59, 10);
+  }
+  #midPart2 > #boxes3 > #yellowBox {
+    background-color: rgb(255, 156, 0);
+  }
+  #midPart2 > #boxes3 > #purpleBox {
+    background-color: rgb(194, 1, 101);
+  }
+  @media only screen and (max-width: 700px) {
+    #midPart2 > #boxes3 {
+      flex-direction: column;
+    }
+    #midPart2 > #boxes3 > div {
+      margin: 10px 10px;
+    }
+  }
+  #midPart3 {
+    padding: 80px 0px;
+  }
+  
+  #midPart3 > h1 {
+    color: rgb(48, 48, 48);
+    text-align: center;
+  }
+  #midPart3 #slider {
+    margin-top: 50px;
+  }
+  
+  #midPart3 .slide {
+    padding: 0px 20px;
+  }
+  #midPart3 .slide > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #midPart3 .slide > div:nth-child(1) p {
+    color: rgb(54, 54, 54);
+    font-size: 22px;
+    margin: 5px 0px;
+  }
+  #midPart3 .slide > div:nth-child(1) a {
+    color: rgb(158, 157, 157);
+  }
+  #midPart3 .slide > div:nth-child(2) {
+    color: rgb(67, 67, 67);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  #midPart3 .slide > div:nth-child(2) i {
+    color: rgb(154, 155, 159);
+  }
+  #slidingPart {
+    display: flex;
+  }
+  #slider > #slides {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #midPart4 > #flexBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 80px;
+    padding: 0px 25px;
+  }
+  #midPart4 > #flexBoxes > .boxes5 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  #midPart4 > #flexBoxes > .boxes5 > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+  }
+  #midPart4 > #flexBoxes > .boxes5 > div:nth-child(1) img {
+    margin-right: 15px;
+  }
+  #midPart4 > #flexBoxes > .boxes5 > div:nth-child(2) {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.8;
+    color: rgb(108, 106, 106);
+  }
+  
+  @media only screen and (max-width: 960px) {
+    #header {
+      visibility: hidden;
+    }
+    #header2 {
+      visibility: visible;
+      background-color: #c82506;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+      box-shadow: 0px 0px 5px grey;
+      align-items: center;
+      width: 100%;
+      position: fixed;
+    }
+    #header2 > #leftImg2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .dropDown {
+      visibility: visible;
+      display: block;
+    }
+    #header2 > #leftImg2 img {
+      width: 30px;
+      margin-right: 10px;
+    }
+    #header2 > div {
+      font-size: 22px;
+      color: white;
+      margin: 10px;
+    }
+    #header2 > div i {
+      cursor: pointer;
+    }
+    #header2 > #menu #bars {
+      text-align: right;
+      width: 280px;
+    }
+    .dropDown > div > div {
+      background-color: rgb(255, 255, 255);
+      border-bottom: 1px solid rgb(202, 198, 198);
+      padding: 6px 40px;
+      cursor: pointer;
+      color: rgb(111, 109, 109);
+    }
+    .dropDown {
+      position: absolute;
+      transform: scaleY(0);
+      transform-origin: top;
+      margin-left: 60%;
+    }
+    .newDrop {
+      transform: scaleY(1);
+      z-index: 1;
+      position: fixed;
+    }
+    .dropDown > div > div:hover {
+      background-color: rgb(238, 235, 235);
+    }
+    .dropDown > div > div span {
+      color: #c82506;
+    }
+    .dropDown > div > .bold {
+      font-weight: bold;
+      color: rgb(108, 106, 106);
+    }
+    .dropDown > div {
+      width: 100%;
+      float: right;
+    }
+    .midPart1 {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .midPart1 > .leftPart1 {
+      justify-content: center !important;
+    }
+    .midPart1 > div:nth-child(2) {
+      margin: auto;
+    }
+    .midPart1 > div:nth-child(2) > img {
+      width: 100%;
+    }
+    .midPart1 > div > div {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .midPart1 #appPlayStore {
+      margin-bottom: 50px;
+    }
+    #midPart4 > #flexBoxes {
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media only screen and (max-width: 978px) {
+    #slider > #slides {
+      flex-direction: column;
+    }
+    #slider > #slides > .slide {
+      margin: 20px 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #midPart4 > #flexBoxes {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .midPart1 #appPlayStore {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  .midPart1 #appPlayStore img {
+    width: 120px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  #midPart5 {
+    text-align: center;
+  }
+  #midPart5 span {
+    color: #c82506;
+  }
+  #midPart5 button {
+    padding: 10px 30px;
+    background-color: #c82506;
+    font-size: 22px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  
+  #prcMainFooter {
+    background-color: rgb(103, 103, 103);
+    color: white;
+    font-size: 13px;
+    padding: 30px 5px 20px 5px;
+  }
+  #prcMainFooter .greyFonts {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+  }
+  #prcMainFooter p,
+  #prcMainFooter #prcMainFooterBox3 > div {
+    margin-top: 15px;
+  }
+  
+  #prcMainFooter .greyFonts > p:nth-child(1) {
+    color: white;
+    font-size: 13px;
+  }
+  #prcMainFooter > #prcFooterflexBox1 {
+    display: flex;
+    flex-direction: row;
+  }
+  #prcMainFooter > #prcFooterflexBox1 > div,
+  #prcFooterBottomBox {
+    margin: 20px;
+  }
+  .prcMainFooterBox300 {
+    display: flex;
+    flex-direction: row;
+  }
+  .prcMainFooterBox300 > div {
+    margin: 10px;
+  }
+  .prcMainFooterBox300 > div > i {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  #prcFooterflexBox1 > .prcMainFooterBox2 > p:nth-child(n + 2) {
+    cursor: pointer;
+  }
+  #prcFooterGreyLine {
+    height: 1px;
+    background-color: rgb(153, 153, 153);
+    margin: 20px;
+  }
+  #prcFooterBottomBox {
+    background-color: rgb(103, 103, 103);
+    height: 50px;
+  }
+  #prcFooterBottomBox p {
+    font-size: 13px;
+    text-align: right;
+  }
+  #prcFooterBottomBox > div {
+    float: right;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #prcMainFooter > #prcFooterflexBox1 {
+      flex-direction: column;
+    }
+    #prcMainFooter > #prcFooterflexBox1 {
+      flex-direction: column;
+    }
+    #prcFooterBottomBox,
+    #prcFooterGreyLine {
+      display: none;
+    }
+  }

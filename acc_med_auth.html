@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ACCUEIL MÉDECIN</title>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/doctorPage.css">
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.equalheights.js"></script> 
+    <script src="js/camera.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>  
+    <script src="js/bootstrap-filestyle.js"></script> 
+    <script src="js/wow/wow.js"></script>
+    <script src="js/wow/device.min.js"></script>
+    <script src="js/jquery.mobile.customized.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            jQuery('.camera_wrap').camera();
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }   
+        });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+
+    
+    <header class="clearfix">
+        <div class="container">
+            <h1 class="navbar-brand navbar-brand_"><a href="acc_pat_auth.html"><img src="img/logo.png" alt="logo" style="width:25%; height:25%"></a></h1>
+            <a href="param_pat.php" class="header-link" style="position: absolute; top: 30%; right: -20%;">
+                <img src="img/account.png" alt="Description de l'image" class="image-header" style="width: 16%; height: 16%;">
+            </a>
+            <div class="box1 clearfix">
+                
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+            <div class="container">
+                <ul class="nav sf-menu clearfix">
+                    <li class="active"><a href="acc_med_auth.html">Accueil Médecin</a></li>
+                    <li><a href="./Medecin/MesReservationMedecin.php">RÉSERVATIONS PATIENTS</a></li>
+                    <li><a href="./Medecin/AfficherPublication.php">Mes Postes</a></li>
+                    <li><a href="./Medecin/MesReservationMedecin.php">Mes RÉSERVATIONS </a></li>
+                    <li class="index-4.htm"><a href="send_message.php">ACCÈS RDV VISIO</a>
+                    <li><a href="./Medecin/AjouterMedecin.php">Ajouter publications</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider">  
+        <div class="camera_wrap">
+            <div data-src="img/medecin_1.jpg">
+                <div class="camera-caption fadeIn">
+                    <p class="title"><br>Gérez vos RDV directement en ligne !</p>
+                </div>
+            </div>
+            <div data-src="img/medecin_2.jpg">
+                <div class="camera-caption fadeIn">
+                    <p class="title"><br>Plateforme 100 % conçue pour faciliter la gestion de rdv !</p>
+                </div>
+            </div>
+            <div data-src="img/medecin_3.jpg">
+                <div class="camera-caption fadeIn">
+                    <p class="title"><br>Vous pouvez annuler un rdv jusqu'à 24h avant !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content"> 
+        <div class="thumb-box1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 wow fadeInUp">
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; justify-content: center; align-items: center; width: 80vw; margin: 0 auto;">
+                            <button type="button" style="border-radius:2%; width:100%; height:150px; font-size: 35px; text-align:center; color:white; background-color:rgb(0, 0, 0);">
+                                <a href="./Medecin/MesReservationMedecin.php" style="color:white; text-decoration:none;">RÉSERVATIONS PATIENTS </a>
+                            </button>
+                            <button type="button" style="border-radius:2%; width:100%; height:150px; font-size: 35px; text-align:center; color:white; background-color:rgb(0, 0, 0);">
+                                <a href="acc_rdv_visio_med.html" style="color:white; text-decoration:none;">ACCÈS RDV VISIO</a>
+                            </button>
+                            <button type="button" style="border-radius:2%; width:100%; height:150px; font-size: 35px; text-align:center; color:white; background-color:rgb(0, 0, 0);">
+                                <a href="./Medecin/AjouterMedecin.php" style="color:white; text-decoration:none;">Ajouter publications</a>
+                            </button>
+                            <button type="button" style="border-radius:2%; width:100%; height:150px; font-size: 35px; text-align:center; color:white; background-color:rgb(0, 0, 0);">
+                                <a href="./Medecin/AfficherPublication.php" style="color:white; text-decoration:none;">Mes Postes </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <!--<a href="" class="btn-default btn1">More</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--saliiiiiimmmmmmmmmmmmmmmm-->
+        <div id="midPart3">
+            <h1>Nos meilleurs medecins</h1>
+            <div id="slidingPart">
+                
+                <div id="slider">
+                    <div id="slides">
+                     
+                        <div class="slide first">
+                            <div>
+                                <div><img src=""></div>
+                                <div><p>Dr Salim</p></div>
+                                <div><a>Cardiologue</a></div>
+                            </div>
+                            <div>
+                                <i class="fas fa-quote-left"></i> Spécialiste des maladies du cœur et du système circulatoire. <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div>
+                                <div><img
+                                        src="">
+                                </div>
+                                <div>
+                                    <p>Dr Abrar</p>
+                                </div>
+                                <div><a>Neurologue</a></div>
+                            </div>
+                            <div>
+                                <i class="fas fa-quote-left"></i> Spécialiste des maladies du système nerveux, y compris le cerveau et la moelle épinière. <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div>
+                                <div><img
+                                        src="">
+                                </div>
+                                <div>
+                                    <p>Dr Khalid</p>
+                                </div>
+                                <div><a>Oncologue</a></div>
+                            </div>
+                            <div>
+                                <i class="fas fa-quote-left"></i> Spécialiste du diagnostic et du traitement du cancer. <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div>
+                                <div><img
+                                        src="">
+                                </div>
+                                <div>
+                                    <p>Dr Daniella</p>
+                                </div>
+                                <div><a>Médecin du sport</a></div>
+                            </div>
+                            <div>
+                                <i class="fas fa-quote-left"></i> Spécialiste des blessures et des conditions liées à l'activité physique. <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div>
+                                <div><img
+                                        src="">
+                                </div>
+                                <div>
+                                    <p>Dr Teo</p>
+                                </div>
+                                <div><a>Médecin de famille</a></div>
+                            </div>
+                            <div>
+                                <i class="fas fa-quote-left"></i> Praticien généraliste qui s'occupe de la santé globale des patients. <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                 
+                       
+               
+                    </div>
+                 
+                    
+    
+          
+                </div>
+               
+            </div>
+        </div>
+
+
+
+        <div id="midPart4" class="whiteGrey"> 
+            <h1>Principales raisons pour utiliser </h1>
+            <div id="flexBoxes">
+                <div class="boxes5">
+                    <div>
+                        <div><img src="https://assets.lybrate.com/f_auto,h_64/imgs/product/Homepage/Grow-your-network.png" alt=""></div>
+                        <div>Développez votre réseau professionnel</div>
+                    </div>
+                    <div>Partagez et discutez des moments quotidiens de votre pratique avec des milliers d'autres médecins à travers le monde.</div>
+                </div>
+                <div class="boxes5">
+                    <div>
+                        <div><img src="https://assets.lybrate.com/f_auto,h_64/imgs/product/Homepage/puzzle.png" alt=""></div>
+                        <div>Réalisons plus ensemble</div>
+                    </div>
+                    <div>Profitez de l'intelligence collective de la communauté et prenez des décisions de traitement plus rapides et plus éclairées.</div>
+                </div>
+                <div class="boxes5">
+                    <div>
+                        <div><img src="https://assets.lybrate.com/f_auto,h_64/imgs/product/Homepage/Build-reputation.png" alt=""></div>
+                        <div>Construisez votre réputation en ligne.</div>
+                    </div>
+                    <div>Partagez votre expertise avec des millions de personnes en quête de soins sur la plateforme. Faites une réelle différence et aidez les gens à se sentir bien</div>
+                </div>
+                <div class="boxes5">
+                    <div>
+                        <div><img src="https://assets.lybrate.com/f_auto,h_64/imgs/product/Homepage/Grow.png" alt=""></div>
+                        <div>Développez votre propre pratique.</div>
+                    </div>
+                    <div>Obtenez plus de patients pour votre pratique réelle, votre institution ou votre pratique en ligne.</div>
+                </div>
+                <div class="boxes5">
+                    <div>
+                        <div><img src="https://assets.lybrate.com/f_auto,h_64/imgs/product/Homepage/Deliver.png" alt=""></div>
+                        <div>Fournissez des soins aux patients de manière intelligente.</div>
+                    </div>
+                    <div>Dossiers médicaux et gestion de pratique sans papier qui vous permettent de vous concentrer sur la guérison de vos patients.</div>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        
+    
+        <div id="midPart5" class="whiteGrey">
+            <h1>
+                Rejoindre <span>150,000+</span> D'autres experts médicaux qui utilisent Mediconnect pour établir des connexions et développer leurs pratiques.
+            </h1>
+            <div>
+                <button onclick="conncet()" >Connexion</button>
+            </div>
+    
+        </div>
+    
+        <script>
+            function conncet() {
+                window.location.href="SIGNIN.html" 
+            }
+        </script>
+
+
+
+        <!-- abraaaaaaaaaaaaaaaaaaaarrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+       <!-- Conteneur du formulaire -->
+       <div class="form-container">
+        <!-- Form for Adding Doctor -->
+        <form action="./Medecin/AjouterMedecin.php" method="post" class="form" onsubmit="return redirectToPublication();">
+            <div class="form-groupMedecin">
+                <label for="nom" class="label">Nom du Médecin :</label>
+                <input type="text" id="nom" name="nom" class="input" required placeholder="Entrez le nom">
+            </div>
+            <div class="form-groupMedecin">
+                <label for="specialite" class="label">Spécialité :</label>
+                <select id="specialite" name="specialite" class="select" required>
+                    <option value="" disabled selected>Choisir une spécialité</option>
+                    <option value="ophtalmologue">Ophtalmologue</option>
+<option value="psychiatre">Psychiatre</option>
+<option value="radiologue">Radiologue</option>
+<option value="endocrinologue">Endocrinologue</option>
+<option value="neurochirurgien">Neurochirurgien</option>
+<option value="oncologue">Oncologue</option>
+<option value="urologue">Urologue</option>
+<option value="gastro-entérologue">Gastro-entérologue</option>
+<option value="infectiologue">Infectiologue</option>
+<option value="chirurgien-plastique">Chirurgien plastique</option>
+
+                </select>
+            </div>
+            <div class="form-groupMedecin">
+                <label for="region" class="label">Région :</label>
+                <select id="region" name="region" class="select" required>
+                    <option value="" disabled selected>Choisir une région</option>
+                    <option value="nantes">Nantes</option>
+                    <option value="limoges">Limoges</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="paris">Paris</option>
+                </select>
+            </div>
+            <div class="form-groupMedecin">
+                <label for="dates_disponibles" class="label">Dates Disponibles :</label>
+                <input type="text" id="dates_disponibles" name="dates_disponibles" class="input" required placeholder="Sélectionner les dates" readonly>
+            </div>
+            <div class="form-groupMedecin">
+                <label for="telephone" class="label">Téléphone :</label>
+                <input type="text" id="telephone" name="telephone" class="input" placeholder="Entrez le numéro de téléphone">
+            </div>
+            <button type="submit" class="button" onclick="window.location.href='./Medecin/AfficherPublication.php';">Ajouter Médecin</button>
+
+        </form>
+    </div>
+    
+    
+        
+    <script>
+        function redirectToPublication(event) {
+            // Empêcher l'envoi du formulaire classique
+            event.preventDefault();
+    
+            // Envoyer les données du formulaire
+            const form = document.querySelector('.form');
+            const formData = new FormData(form);
+    
+            // Utiliser fetch pour envoyer les données du formulaire
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Rediriger vers la page des publications
+                    window.location.href = './Medecin/AfficherPublication.php';
+                } else {
+                    alert("Erreur lors de l'ajout du médecin.");
+                }
+            })
+            .catch(error => {
+                console.error("Erreur:", error);
+                alert("Erreur lors de l'ajout du médecin.");
+            });
+    
+            return false;
+        
+        }
+    </script>
+
+<script>
+    flatpickr("#dates_disponibles", {
+        mode: "multiple", // Mode de sélection multiple
+        dateFormat: "Y-m-d", // Format de la date
+        allowInput: true, // Permet d'écrire directement dans le champ
+        disable: [
+            function(date) {
+                return (date.getDay() === 0 || date.getDay() === 6); // Désactive les dimanches et samedis
+            }
+        ],
+        onClose: function(selectedDates, dateStr, instance) {
+            // Met à jour la valeur du champ avec les dates sélectionnées
+            const dates = selectedDates.map(date => instance.formatDate(date, "Y-m-d")).join(", ");
+            document.getElementById('dates_disponibles').value = dates; // Affiche les dates dans le champ
+        }
+    });
+</script>
+
+
+        <style>
+
+/* Style du conteneur du formulaire */
+.form-container {
+    max-width: 600px; /* Largeur maximale du conteneur */
+    margin: 20px auto; /* Centrer le conteneur */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombre douce */
+    background-color: #f9f9f9; /* Couleur de fond légèrement grise */
+}
+
+/* Style général du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style des étiquettes de champ */
+form label {
+    font-weight: bold; /* Met le texte en gras */
+    margin-bottom: 6px; /* Ajoute de l'espace en dessous de l'étiquette */
+    font-size: 1rem; /* Taille de police augmentée */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style des champs de saisie (inputs) */
+form input[type="text"],
+form select {
+    padding: 12px; /* Espacement intérieur augmenté */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+    margin-bottom: 15px; /* Espace entre les champs */
+    transition: border-color 0.3s; /* Transition pour le changement de couleur de bordure */
+    font-size: 1rem; /* Taille de police augmentée pour les champs de saisie */
+    width: 100%; /* Largeur à 100% pour remplir le conteneur */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Style des champs au focus */
+form input[type="text"]:focus,
+form select:focus {
+    border-color: #007bff; /* Couleur de bordure au focus */
+    outline: none; /* Enlève le contour par défaut */
+}
+
+/* Style des boutons */
+form button {
+    padding: 12px 15px; /* Espacement intérieur augmenté */
+    background-color: #000; /* Couleur noire */
+    color: white; /* Couleur du texte */
+    border: none; /* Enlève la bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    font-size: 1rem; /* Taille de police standard */
+    transition: background-color 0.3s; /* Transition pour la couleur de fond */
+}
+
+form button:hover {
+    background-color: #444; /* Couleur au survol */
+}
+
+/* Style pour les boutons dans le conteneur */
+.button-container .button {
+    margin-top: 10px; /* Ajoute un espace au-dessus du bouton */
+}
+
+
+        </style>
+    </div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 indent maxheight2 wow fadeInUp">
+                <p class="title">copyright</p>
+                <p class="prev">&copy; <em id="copyright-year"></em> <a href="index-5.html">Privacy Policy</a></p>
+                <ul class="follow_icon2">
+                    <!--<li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                    <li><a href="#" class="fa fa-rss"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>-->
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="title">LIENS IMPORTANTS</p>
+                <!--<ul class="list1">
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Special Promotions</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>-->
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.2s">
+                <p class="title">AIDE</p>
+                <ul class="list1">
+                    <li><a href="MdpOublie.html">MOT DE PASSE OUBLIÉ ?</a></li>
+                    <li><a href="visu-cpte-pat.html">MON COMPTE</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.3s">
+                <p class="title">À PROPOS DE NOUS</p>
+                <ul class="list1">
+                    <li><a href="index-5.html">NOTRE ÉQUIPE</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+  <!-- {%FOOTER_LINK} -->
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+</body>
+</html>
+                

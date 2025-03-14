@@ -1,0 +1,68 @@
+/*GENERAL*/
+*
+{
+    margin 0;
+    padding 0;
+}
+
+/*body*/
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4
+{
+    color: #444;
+}
+
+
+h1
+{
+    font-family: 'Crete Round', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    color:black;
+}
+
+h2
+{
+    font-size: 55px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h3
+{
+    margin: 40px;
+    font-size: 30px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4
+
+{
+    font-size: 24px;
+}
+
+/*qqch*/
+
+#derriere
+{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 30px;
+}
+
+.button1
+{
+    color: #fff;
+    background-color:lightskyblue;
+    padding: 12px 40px;
+    border-radius: 6px;
+}
+
+.button1:hover
+{
+    color: #fff;
+    background-color: #02b8dd;
+}

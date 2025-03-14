@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ACCUEIL SITE</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/camera.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>  
+<script src="js/bootstrap-filestyle.js"></script> 
+
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+
+<script src="js/wow/wow.js"></script>
+<script src="js/wow/device.min.js"></script>
+<script src="js/jquery.mobile.customized.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+
+
+
+</head>
+<body>
+<!--header-->
+<header class="clearfix">
+    <div class="container">
+        <h1 class="navbar-brand navbar-brand_">
+            <a href="acc_pat.html"><img src="img/logo.png" alt="logo" style="width:25%; height:25%"></a>
+        </h1>
+        <!--<a href="img/account.png" class="header-link" style="position: absolute; top: 30%; right: -20%;">
+            <img src="img/account.png" alt="Description de l'image" class="image-header" style="width: 16%; height: 16%;">
+        </a>-->
+        <div class="box1 clearfix"></div>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+        <div class="container">
+            <ul class="follow_icon"></ul>
+        </div>
+    </nav>
+</header>
+
+<div class="slider">  
+    <div class="camera_wrap">
+        <div data-src="img/picture1.jpg"><div class="camera-caption fadeIn"><p class="title"><br>Réserver directement un rdv en ligne !</p></div></div>
+        <div data-src="img/picture2.jpg"><div class="camera-caption fadeIn"><p class="title"><br>Plateforme 100 % conçue pour faciliter la prise de rdv !</p></div></div>
+        <div data-src="img/picture3.jpg"><div class="camera-caption fadeIn"><p class="title"><br>Vous pouvez annuler votre rdv jusqu'à 24h avant !</p></div></div>
+    </div>
+</div>
+<!--content-->
+<div class="content"> 
+    <div class="thumb-box1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 wow fadeInUp">
+                    <div style="display: flex; justify-content: center; gap: 20px; margin-left: 50%;">
+
+                        <button type="button" 
+                                style="border-radius:2%; width:400px; height:100px; font-size: 35px; text-align:center; color:white; background-color:rgb(0, 0, 0);"><a href="SIGNIN.html" style="color:white">SE CONNECTER</a>
+                            
+                        </button>
+                        <button type="button" 
+                                style="border-radius:2%; width:400px; height:100px; font-size: 35px; text-align:center; color:white; background-color:rgb(0, 0, 0);"><a href="SIGNUP.html" style="color:white">S'INSCRIRE</a>
+                            
+                        </button>
+                    
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <!--<a href="" class="btn-default btn1">More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--<div class="thumb-box7">
+        <div class="container">
+            <p class="title wow fadeInLeft">Signaler un bug :</p>
+            <div class="contactForm2">
+                <form id="contact-form">
+                      <div class="contact-form-loader"></div>
+                      <div class="row">
+                          <fieldset>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label class="message form-div-4">
+                                  <textarea name="message" placeholder="ÉCRIVEZ VOTRE MESSAGE ICI" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                  <span class="empty-message">CELA EST REQUIS !</span>
+                                  <span class="error-message">LE MESSAGE EST TROP COURT !</span>
+                                </label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="box">
+                                    <label class="name form-div-1">
+                                      <input type="text" name="name" placeholder="VOTRE NOM" value="" data-constraints="@Required @JustLetters"  />
+                                      <span class="empty-message">CELA EST REQUIS !</span>
+                                      <span class="error-message">CELA N'EST PAS UN NOM VALIDE !</span>
+                                    </label>
+                                    <label class="email form-div-2">
+                                      <input type="text" name="email" placeholder="VOTRE EMAIL" value="" data-constraints="@Required @Email" />
+                                      <span class="empty-message">CELA EST REQUIS !</span>
+                                      <span class="error-message">CELA N'EST PAS UN EMAIL VALIDE !</span>
+                                    </label>
+                                    <div class="btns">
+                                        <a href="#" data-type="submit" class="btn-default btn3">ENVOYER LE MESSAGE</a>
+                                    </div>
+                                </div>
+                            </div>
+                          </fieldset> 
+                      </div>
+                      <div class="modal fade response-message">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                              You message has been sent! We will be in touch soon.
+                            </div>      
+                          </div>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>-->
+    <div class="thumb-box8">
+        <div class="container">
+            
+        </div>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 indent maxheight2 wow fadeInUp">
+                <p class="title">copyright</p>
+                <p class="prev">&copy; <em id="copyright-year"></em> <a href="index-5.html">Privacy Policy</a></p>
+                <ul class="follow_icon2">
+                    <!--<li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                    <li><a href="#" class="fa fa-rss"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>-->
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="title">LIENS IMPORTANTS</p>
+                <!--<ul class="list1">
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Special Promotions</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>-->
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.2s">
+                <p class="title">AIDE</p>
+                <ul class="list1">
+                    <li><a href="MdpOublie.html">MOT DE PASSE OUBLIÉ ?</a></li>
+                    <li><a href="signaler_bug.php">SIGNALER UN BUG</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 maxheight2 wow fadeInUp" data-wow-delay="0.3s">
+                <p class="title">À PROPOS DE NOUS</p>
+                <ul class="list1">
+                    <li><a href="notre_equipe.php">NOTRE ÉQUIPE</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+  <!-- {%FOOTER_LINK} -->
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+</body>
+</html>
+                

@@ -1,0 +1,40 @@
+/*General*/
+*
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh; /* Hauteur minimum pour centrer verticalement */
+    flex-direction: column;
+}
+
+.result-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.result-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.result-container li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.result-container strong {
+    font-size: 20px; /* Taille du nom du cancer */
+    color: #0056b3; /* Couleur du nom du cancer */
+}
+
+.result-container p {
+    font-size: 20px; /* Taille de la description */
+    text-size-adjust: 1.5rem;
+    color: #333;
+    max-width: 80%; /* Limite la largeur de la description */
+    margin: 0 auto;
+    text-align: center;
+}
